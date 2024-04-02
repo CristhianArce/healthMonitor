@@ -16,7 +16,7 @@ public class FaultMonitor {
     @Transactional
     public void saveRetryAttempt(String serverName, String faultDescription, double elapsedTime, String severity){
         var fault = new DetectedFaults();
-        fault.setFaultDescription(serverName);
+        fault.setServerName(serverName);
         fault.setFaultDescription(faultDescription);
         fault.setElapsedTime(elapsedTime);
         fault.setSeverity(severity);

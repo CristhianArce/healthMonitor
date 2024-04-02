@@ -20,6 +20,9 @@ public class PingSender {
     @Value("${atpos.backend.url}")
     private String stringURL;
 
+    @Value("${atpos.backend.port}")
+    private String port;
+
     @Value("${atpos.backend.packets}")
     private int packets;
 
